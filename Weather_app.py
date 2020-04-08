@@ -3,7 +3,7 @@ import requests
 
 WIDTH = 700
 HEIGHT = 600
-#89688102e3ea042ea4f0b49819d65f22
+
 #api.openweathermap.org/data/2.5/weather?q=London
 
 def format_response(weather):
@@ -20,7 +20,7 @@ def format_response(weather):
     return final_str
 
 def get_weather(city):
-    key_no = '89688102e3ea042ea4f0b49819d65f22'
+    key_no = 'apikeynogoeshere'
     url = 'http://api.openweathermap.org/data/2.5/weather'
     params = {'APPID' : key_no, 'q' : city, 'units' : 'metric'}
     response = requests.get(url, params = params)
